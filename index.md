@@ -2,7 +2,7 @@
 
 {{indexmenu_n>2}}
 
-![image_USMS_index](images/短信服务usms_官网文档首页图_01.png)
+![](images/短信服务usms_官网文档首页图_01.png)
 
 ### 目录：
 
