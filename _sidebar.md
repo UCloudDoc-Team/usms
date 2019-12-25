@@ -1,6 +1,4 @@
 <div class="sidebar_title"> 短信服务 USMS</div>
-![](images/短信服务usms_官网文档首页图_01.png)
-
 * [概览](management_monitor/usms/overview)
 * 产品简介
     * [什么是短信服务](management_monitor/usms/introduction/2001)
