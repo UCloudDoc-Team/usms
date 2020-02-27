@@ -35,7 +35,6 @@
     * [PHP SDK](management_monitor/usms/sdk_docs/7005)
     * [Go SDK](management_monitor/usms/sdk_docs/7007)
     * [Java SDK](management_monitor/usms/sdk_docs/7009)
-    * [Python SDK（旧版）](management_monitor/usms/sdk_docs/7097)
 * API 文档
     * [短信服务API 概览](management_monitor/usms/api_docs/9001)
 * [错误码](management_monitor/usms/error_code)
