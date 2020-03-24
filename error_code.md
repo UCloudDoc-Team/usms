@@ -20,8 +20,8 @@
 | 151          | 网关缓存服务异常                           | API网关服务异常，联系[技术支持](https://www.ucloud.cn/site/service.html)处理 |
 | 160          | 缺少关键参数Action                         | 检查参数是否完整                                             |
 | 161          | Action 不存在                              |                                                              |
-| 170          | 缺失API签名                                | 请确认API请求是否漏填API签名信息，可参考[API调用说明](https://docs.ucloud.cn/api/summary/overview) |
-| 171          | API签名错误                                | 检查API签名是否有误，可参考[API调用说明](https://docs.ucloud.cn/api/summary/overview) |
+| 170          | 缺失API签名                                | 请确认API请求是否漏填API签名信息，可参考[API调用说明](https://docs.ucloud.cn/api/summary/README) |
+| 171          | API签名错误                                | 检查API签名是否有误，可参考[API调用说明](https://docs.ucloud.cn/api/summary/README) |
 | 172          | 账号不存在This account does not exist      | 确认账号信息是否有误                                         |
 | 173          | 账户限制Account restriction                | 账号受限，可联系[技术支持](https://www.ucloud.cn/site/service.html) 了解详情 |
 | 174          | Token 不存在                               |                                                              |
