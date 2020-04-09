@@ -17,14 +17,15 @@
 | 18018        | 短信模板参数与短信模板不匹配               | 检查模板参数是否有误 或 是否与模板匹配                       |
 | 18019        | 单次提交的手机号码超过1000个拦截发送       | 单次提交的手机号码数需在1000内                               |
 | 18023        | 短信内容中含有禁发的敏感词                 | 修改短信内容（一般是短信模板中的变量传值有敏感词）           |
+| 18033        | 变量内容不符合规范                         | 检查模板变量传值是否有误，规范可参考 [短信变量](https://docs.ucloud.cn/usms/guide/5003/305) |
 | 151          | 网关缓存服务异常                           | API网关服务异常，联系[技术支持](https://www.ucloud.cn/site/service.html)处理 |
 | 160          | 缺少关键参数Action                         | 检查参数是否完整                                             |
-| 161          | Action 不存在                              |                                                              |
+| 161          | Action 不存在                              | 检查参数是否完整                                             |
 | 170          | 缺失API签名                                | 请确认API请求是否漏填API签名信息，可参考[API调用说明](https://docs.ucloud.cn/api/summary/README) |
 | 171          | API签名错误                                | 检查API签名是否有误，可参考[API调用说明](https://docs.ucloud.cn/api/summary/README) |
 | 172          | 账号不存在This account does not exist      | 确认账号信息是否有误                                         |
 | 173          | 账户限制Account restriction                | 账号受限，可联系[技术支持](https://www.ucloud.cn/site/service.html) 了解详情 |
-| 174          | Token 不存在                               |                                                              |
+| 174          | Token 不存在                               | 检查参数是否完整                                             |
 | 180          | 缺少关键参数API version                    | 检查参数是否完整                                             |
 | 200          | API公共服务不可用                          | 可联系[技术支持](https://www.ucloud.cn/site/service.html) 处理 |
 | 290          | 项目未授权                                 | 项目未授权，需联系您的主账号管理员将项目授权给您账号         |
