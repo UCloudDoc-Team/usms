@@ -2,7 +2,7 @@
 
 
 * 产品简介
-    * [什么是短信服务](/usms/introduction/2001)
+    * [什么是短信服务.](/usms/introduction/2001)
     * [术语解释](/usms/introduction/2003)
     * 审核标准
         * [认证类型及权益](/usms/introduction/2005/2101)
