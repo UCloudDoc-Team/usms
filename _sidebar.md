@@ -37,7 +37,10 @@
     * [Java SDK](/usms/sdk_docs/7009)
 * API 文档
     * [短信服务API 概览](/usms/api_docs/9001)
-* [错误码](/usms/error_code)
+    * 调用方式
+      * [请求结构](/usms/api_docs/req_construct/req_cons)
+      * [公共参数](/usms/api_docs/req_construct/com_param)
+    * [错误码](/usms/error_code)
 * 常见问题
     * [发送频率问题](/usms/faq/1107)    
     * [短信发送问题](/usms/faq/1109)    
