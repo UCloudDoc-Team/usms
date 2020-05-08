@@ -35,7 +35,7 @@
     * [PHP SDK](/usms/sdk_docs/7005)
     * [Go SDK](/usms/sdk_docs/7007)
     * [Java SDK](/usms/sdk_docs/7009)
-* API 文档
+* [API 文档](/usms/api_docs/9001)
     * [短信服务API 概览](/usms/api_docs/9001)
     * 调用方式
       * [请求结构](/usms/api_docs/req_construct/req_cons)
