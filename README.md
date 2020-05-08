@@ -23,12 +23,14 @@
         * [发送记录](/usms/guide/5003/307)
         * [短信发送](/usms/guide/5003/309)
         * [web群发功能](/usms/guide/5003/311)
+        * [发送数据统计](/usms/guide/5003/313)
     * 国际短信
         * [短信套餐包](/usms/guide/5005/501)
         * [短信签名](/usms/guide/5005/503)
         * [短信模板](/usms/guide/5005/505)
         * [发送记录](/usms/guide/5005/507)
         * [短信发送](/usms/guide/5005/509)
+        * [发送数据统计](/usms/guide/5005/513)
 * SDK 文档
     * [短信服务SDK 概览](/usms/sdk_docs/7001)
     * [Python SDK](/usms/sdk_docs/7003)
@@ -37,7 +39,10 @@
     * [Java SDK](/usms/sdk_docs/7009)
 * API 文档
     * [短信服务API 概览](/usms/api_docs/9001)
-* [错误码](/usms/error_code)
+    * 调用方式
+      * [请求结构](/usms/api_docs/req_construct/req_cons)
+      * [公共参数](/usms/api_docs/req_construct/com_param)
+    * [错误码](/usms/error_code)
 * 常见问题
     * [发送频率问题](/usms/faq/1107)    
     * [短信发送问题](/usms/faq/1109)    
