@@ -23,12 +23,14 @@
         * [发送记录](/usms/guide/5003/307)
         * [短信发送](/usms/guide/5003/309)
         * [web群发功能](/usms/guide/5003/311)
+        * [发送数据统计](/usms/guide/5003/313)
     * 国际短信
         * [短信套餐包](/usms/guide/5005/501)
         * [短信签名](/usms/guide/5005/503)
         * [短信模板](/usms/guide/5005/505)
         * [发送记录](/usms/guide/5005/507)
         * [短信发送](/usms/guide/5005/509)
+        * [发送数据统计](/usms/guide/5005/513)
 * SDK 文档
     * [短信服务SDK 概览](/usms/sdk_docs/7001)
     * [Python SDK](/usms/sdk_docs/7003)
