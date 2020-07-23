@@ -39,6 +39,8 @@
     * [Java SDK](/usms/sdk_docs/7009)
 * API 文档
     * [短信服务API 概览](/usms/api_docs/9001)
+    * 批量推送
+      * [HTTP上行消息批量推送](/usms/api_docs/ret_message/usmsUp)
     * 调用方式
       * [请求结构](/usms/api_docs/req_construct/req_cons)
       * [公共参数](/usms/api_docs/req_construct/com_param)
