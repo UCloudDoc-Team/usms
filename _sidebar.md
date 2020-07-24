@@ -45,7 +45,7 @@
     * 回执消息推送
       * [状态报告推送](/usms/api_docs/ret_message/retStatus)
       * [上行消息推送](/usms/api_docs/ret_message/upMes)
-    * [错误码](/usms/error_code)
+    * [错误码](/usms/api_docs/error_code/error_code)
 * 常见问题
     * [发送频率问题](/usms/faq/1107)    
     * [短信发送问题](/usms/faq/1109)    
