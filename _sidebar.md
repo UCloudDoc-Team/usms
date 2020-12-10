@@ -1,4 +1,3 @@
-<div class="sidebar_title"> 短信服务 USMS</div>
 
 * [概览](/usms/README)
 * 产品简介
