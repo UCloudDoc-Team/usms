@@ -26,13 +26,15 @@
   MsgType: 0, 
   Data: [ 
     {
-      ExtendCode: "12345",      
+      ExtendCode: "12345",  
+      UserId: "you man c define the content by yrself",     
       Phone: "185****9057",     
       ReplyContent: "好的，可以了",  
       ReplyTime: 1573552778       
     },
     {
       ExtendCode: "12346",
+      UserId: "you man c define the content by yrself",  
       Phone: "185****9057",
       ReplyContent: "收到，谢谢",
       ReplyTime: 1573552778
@@ -52,12 +54,13 @@
 
 - Data
 
-| Parameter name | Type   | Description      | Case         | Required |
-| -------------- | ------ | ---------------- | ------------ | -------- |
-| ExtendCode     | string | 扩展码，默认不带 | 12345        | N        |
-| Phone          | string | 手机号码         | 18512345678  | Y        |
-| ReplyContent   | string | 上行（回复）消息 | 好的，收到了 | Y        |
-| ReplyTime      | int    | 回复时间         | 1563867000   | Y        |
+| Parameter name | Type   | Description                                      | Case             | Required |
+| -------------- | ------ | ------------------------------------------------ | ---------------- | -------- |
+| ExtendCode     | string | 扩展码，默认不带                                 | 12345            | N        |
+| UserId         | string | 自定义的业务标识ID，字符串（ 长度不能超过32 位） | ucloud-uhost-001 | N        |
+| Phone          | string | 手机号码                                         | 18512345678      | Y        |
+| ReplyContent   | string | 上行（回复）消息                                 | 好的，收到了     | Y        |
+| ReplyTime      | int    | 回复时间                                         | 1563867000       | Y        |
 
 
 

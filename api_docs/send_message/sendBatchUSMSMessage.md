@@ -84,7 +84,7 @@ WwogICAgewogICAgICAgICJUZW1wbGF0ZUlkIjoiVVRBMjAyMTI4MzFDODVDIiwKICAgICAgICAiU2ln
 | RetCode        | int    | 返回码                                                       | **Yes**  |
 | Action         | string | 操作名称                                                     | **Yes**  |
 | Message        | string | 发生错误时表示错误描述                                       | **Yes**  |
-| TaskId         | string | 本次提交发送任务的唯一ID，可根据该值查询本次发送的短信列表。注：成功提交短信数大于0时，才返回该字段 | No       |
+| SessionNo      | string | 本次提交发送任务的唯一ID，可根据该值查询本次发送的短信列表。注：成功提交短信数大于0时，才返回该字段 | No       |
 | ReqUuid        | string | 本次请求Uuid                                                 | No       |
 | SuccessCount   | int    | 成功提交短信（未拆分）条数                                   | No       |
 | FailContent    | array  | 未发送成功的详情，返回码非0时该字段有效，可根据该字段数据重发 | No       |
@@ -125,7 +125,7 @@ https://api.ucloud.cn/?Action=SendBatchUSMSMessage
     "RetCode":0,
     "Action":"SendBatchUSMSMessageResponse",
     "Message":"submit success",
-    "TaskId":"abcd-dadd-dafs-dadfa-dafdsa",
+    "SessionNo":"abcd-dadd-dafs-dadfa-dafdsa",
     "ReqUuid":"abcd-dadd-dafs-dadfa-dafdsa",
     "SuccessCount":2,
     "FailContent":[
