@@ -33,7 +33,6 @@
       "ReceiptResult": "发送成功",
       "ReceiptCode": "Delivrd",
       "ReceiptDesc": "用户接收成功",
-      "ExtendCode": "12345",  
       "UserId": "you man c define the content by yrself"  
     },
     {
@@ -44,7 +43,6 @@
       "ReceiptResult": "发送失败",
       "ReceiptCode": "MSBLACK",
       "ReceiptDesc": "手机在运营商防骚扰黑名单",
-      "ExtendCode": "12345",  
       "UserId": "you man c define the content by yrself"  
     } ]
 }
@@ -70,7 +68,6 @@
 | ReceiptResult  | string | 发送状态                                                     | 发送成功         | Y        |
 | ReceiptCode    | string | 状态报告编码                                                 | Delivrd          | Y        |
 | ReceiptDesc    | string | 状态报告说明                                                 | 用户接收成功     | Y        |
-| ExtendCode     | string | 扩展码，默认不带                                             | 12345            | N        |
 | UserId         | string | 自定义的业务标识ID，字符串（ 长度不能超过32 位）             | ucloud-uhost-001 | N        |
 
 
