@@ -12,7 +12,7 @@
 | PublicKey      | String | 对应的 API公钥                                               | Yes      | 公共参数 |
 | Signature      | String | 根据API公私钥及API指令生成的用户签名，参见 [签名算法](https://docs.ucloud.cn/api/summary/signature) | Yes      | 公共参数 |
 | ProjectId      | string | 项目 ID，主账号与财务账号为空时为 默认项目；子账号为必填字段，参见 [获取 项目ID](https://docs.ucloud.cn/api/summary/get_project_list) | Yes      | 公共参数 |
-| TaskContent    | string | 批量发送参数，base64编码后的json数组，编码前后的json数组参考下述示例：<br> [Base64编码前的TaskContent示例](https://docs.ucloud.cn/usms/api_docs/send_message/sendBatchUSMSMessage?id=TaskContent%E7%A4%BA%E4%BE%8B%EF%BC%88Base64%E7%BC%96%E7%A0%81%E5%89%8D%EF%BC%89)、 [Base64编码后的TaskContent示例](https://docs.ucloud.cn/usms/api_docs/send_message/sendBatchUSMSMessage?id=TaskContent%E7%A4%BA%E4%BE%8B%EF%BC%88Base64%E7%BC%96%E7%A0%81%E5%90%8E%EF%BC%89) | Yes      |          |
+| TaskContent    | string | 批量发送参数，base64编码后的json数组，编码前后的json数组参考下述示例：<br> [Base64编码前的TaskContent示例](usms/api_docs/send_message/sendBatchUSMSMessage?id=taskcontent示例（base64编码前）)、 [Base64编码后的TaskContent示例](https://docs.ucloud.cn/usms/api_docs/send_message/sendBatchUSMSMessage?id=TaskContent%E7%A4%BA%E4%BE%8B%EF%BC%88Base64%E7%BC%96%E7%A0%81%E5%90%8E%EF%BC%89) | Yes      |          |
 
 
 
@@ -30,10 +30,10 @@
 
 | Parameter name | Type   | Description                                                  | Case               | Required |
 | -------------- | ------ | ------------------------------------------------------------ | ------------------ | -------- |
-| TemplateParams | Array  | 短信模板中的变量（数组格式）                                 | ["UCloud","13455"] | Y        |
-| Phone          | string | 手机号码，手机号码格式为(60)1xxxxxxxx，()中为国际长途区号(如中国为86或0086，两种格式都支持)，后面为电话号码.若不传入国际区号，如185XXXX0507，则默认为国内手机号 | 185XXXX0507        | Y        |
-| UserId         | string | 自定义的业务标识ID，字符串（ 长度不能超过32 位）             | ucloud-uhost-001   | N        |
-| ExtendCode     | string | 短信扩展码，格式为阿拉伯数字串，默认不开通，如需开通请联系 UCloud技术支持 | 123                | N        |
+| TemplateParams | Array  | 短信模板中的变量（数组格式）                                 | ["UCloud","13455"] | Yes      |
+| Phone          | string | 手机号码，手机号码格式为(60)1xxxxxxxx，()中为国际长途区号(如中国为86或0086，两种格式都支持)，后面为电话号码.若不传入国际区号，如185XXXX0507，则默认为国内手机号 | 185XXXX0507        | Yes      |
+| UserId         | string | 自定义的业务标识ID，字符串（ 长度不能超过32 位）             | ucloud-uhost-001   | No       |
+| ExtendCode     | string | 短信扩展码，格式为阿拉伯数字串，默认不开通，如需开通请联系 UCloud技术支持 | 123                | No       |
 
 
 
@@ -93,9 +93,9 @@ WwogICAgewogICAgICAgICJUZW1wbGF0ZUlkIjoiVVRBMjAyMTI4MzFDODVDIiwKICAgICAgICAiU2ln
 
 | Parameter name | Type   | Description                                             | Required |
 | -------------- | ------ | ------------------------------------------------------- | -------- |
-| TemplateId     | string | 模板ID                                                  | **Yes**  |
-| SigContent     | string | 签名                                                    | **Yes**  |
-| Target         | array  | 具体号码信息                                            | **Yes**  |
+| TemplateId     | string | 短信模板ID                                              | **Yes**  |
+| SigContent     | string | 短信签名                                                | **Yes**  |
+| Target         | array  | 具体手机号码、模板变量等信息组合                        | **Yes**  |
 | FailureDetails | string | 未能成功发送的详情。注：模板/签名检验失败时，该字段有效 | No       |
 
 ## FailPhoneDetail
