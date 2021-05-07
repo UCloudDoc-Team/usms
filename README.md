@@ -42,6 +42,8 @@
     * 调用方式
       * [请求结构](/usms/api_docs/req_construct/req_cons)
       * [公共参数](/usms/api_docs/req_construct/com_param)
+    * 发送短信
+      * [批量发送短信](/usms/api_docs/send_message/sendBatchUSMSMessage)
     * 回执消息推送
       * [状态报告推送](/usms/api_docs/ret_message/retStatus)
       * [上行消息推送](/usms/api_docs/ret_message/upMes)
