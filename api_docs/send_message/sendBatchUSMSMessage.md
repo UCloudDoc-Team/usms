@@ -12,7 +12,7 @@
 | PublicKey      | String | 对应的 API公钥                                               | Yes      | 公共参数 |
 | Signature      | String | 根据API公私钥及API指令生成的用户签名，参见 [签名算法](https://docs.ucloud.cn/api/summary/signature) | Yes      | 公共参数 |
 | ProjectId      | string | 项目 ID，主账号与财务账号为空时为 默认项目；子账号为必填字段，参见 [获取 项目ID](https://docs.ucloud.cn/api/summary/get_project_list) | Yes      | 公共参数 |
-| TaskContent    | string | 批量发送参数，base64编码后的json数组，编码前后的json数组参考下述示例：<br> [Base64编码前的TaskContent示例](usms/api_docs/send_message/sendBatchUSMSMessage?id=taskcontent示例（base64编码前）)、 [Base64编码后的TaskContent示例](https://docs.ucloud.cn/usms/api_docs/send_message/sendBatchUSMSMessage?id=TaskContent%E7%A4%BA%E4%BE%8B%EF%BC%88Base64%E7%BC%96%E7%A0%81%E5%90%8E%EF%BC%89) | Yes      |          |
+| TaskContent    | string | 批量发送参数，base64编码后的json数组，编码前后的json数组参考下述示例：<br> [Base64编码前的TaskContent示例](usms/api_docs/send_message/sendBatchUSMSMessage?id=taskcontent示例（base64编码前）)、 [Base64编码后的TaskContent示例](usms/api_docs/send_message/sendBatchUSMSMessage?id=taskcontent示例（base64编码后）) | Yes      |          |
 
 
 
