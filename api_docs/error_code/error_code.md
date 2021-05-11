@@ -34,7 +34,3 @@
 | 294          | 访问 IP 被拒绝                             | 客户端 IP不在API白名单中，可在[API秘钥管理](https://console.ucloud.cn/uapi/apikey) 进行配置 |
 
 
-
-## 2）短信状态回执错误码
-
-短信发送状态回执错误码可通过调用 [获取短信发送回执信息](https://docs.ucloud.cn/api/usms-api/get_usms_send_receipt) 获取
