@@ -2628,7 +2628,7 @@
 
 - **主动调API拉取**：可通过调用 [获取短信发送回执状态码接口](https://docs.ucloud.cn/api/usms-api/get_usms_send_receipt) 获取；
 
-- **批量回调接收**：可通过配置  [短信状态报告推送 回调配置](https://docs.ucloud.cn/api/usms-api/get_usms_send_receipt) 主动接收；
+- **批量回调接收**：可通过配置  [短信状态报告推送配置](/usms/api_docs/ret_message/retStatus) 主动接收；
 
-- **官网页面查询**：可登陆  [USMS短信服务 / 发送记录查询页](https://docs.ucloud.cn/api/usms-api/get_usms_send_receipt) 查询；
+- **官网页面查询**：可登陆  [USMS短信服务 / 发送记录查询页](https://console.ucloud.cn/usms/domestic) 查询；
 
