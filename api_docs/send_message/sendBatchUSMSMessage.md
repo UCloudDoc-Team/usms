@@ -81,9 +81,9 @@ WwogICAgewogICAgICAgICJUZW1wbGF0ZUlkIjoiVVRBMjAyMTI4MzFDODVDIiwKICAgICAgICAiU2ln
 
 | Parameter name | Type   | Description                                                  | Required |
 | -------------- | ------ | ------------------------------------------------------------ | -------- |
-| RetCode        | int    | 返回码                                                       | **Yes**  |
-| Action         | string | 操作名称                                                     | **Yes**  |
-| Message        | string | 发生错误时表示错误描述                                       | **Yes**  |
+| RetCode        | int    | 返回状态码，为 0 则为成功返回，非 0 为失败                   | **Yes**  |
+| Action         | string | 操作指令名称                                                 | **Yes**  |
+| Message        | string | 返回错误消息，当 `RetCode` 非 0 时提供详细的描述信息         | **Yes**  |
 | SessionNo      | string | 本次提交发送任务的唯一ID，可根据该值查询本次发送的短信列表。注：成功提交短信数大于0时，才返回该字段 | No       |
 | ReqUuid        | string | 本次请求Uuid                                                 | No       |
 | SuccessCount   | int    | 成功提交短信（未拆分）条数                                   | No       |
