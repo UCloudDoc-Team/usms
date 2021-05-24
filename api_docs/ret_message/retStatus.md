@@ -68,7 +68,7 @@
 | ReceiptResult  | string | 发送状态                                                     | 发送成功         | Y        |
 | ReceiptCode    | string | 状态报告编码                                                 | Delivrd          | Y        |
 | ReceiptDesc    | string | 状态报告说明                                                 | 用户接收成功     | Y        |
-| UserId         | string | 自定义的业务标识ID，字符串（ 长度不能超过32 位）             | ucloud-uhost-001 | N        |
+| UserId         | string | 自定义的业务标识ID，字符串（ 长度不能超过32 位），不支持 单引号、表情包符号等特殊字符 | ucloud-uhost-001 | N        |
 
 
 
