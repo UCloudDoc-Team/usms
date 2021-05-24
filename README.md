@@ -24,6 +24,7 @@
         * [短信发送](/usms/guide/5003/309)
         * [web群发功能](/usms/guide/5003/311)
         * [发送数据统计](/usms/guide/5003/313)
+        * [发送失败分析](/usms/guide/5003/315)
     * 国际短信
         * [短信套餐包](/usms/guide/5005/501)
         * [短信签名](/usms/guide/5005/503)
@@ -31,6 +32,7 @@
         * [发送记录](/usms/guide/5005/507)
         * [短信发送](/usms/guide/5005/509)
         * [发送数据统计](/usms/guide/5005/513)
+        * [发送失败分析](/usms/guide/5005/515)
 * SDK 文档
     * [短信服务SDK 概览](/usms/sdk_docs/7001)
     * [Python SDK](/usms/sdk_docs/7003)
