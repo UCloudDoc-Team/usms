@@ -30,7 +30,7 @@
       "Phone": "185****9057",
       "CostCount": 2,
       "ReceiptTime": 1563867000,
-      "ReceiptResult": "发送成功",
+      "ReceiptResult": "发送成功",    //通过该字段判断发送结果，枚举值见参数说明
       "ReceiptCode": "Delivrd",
       "ReceiptDesc": "用户接收成功",
       "UserId": "you man c define the content by yrself"  
@@ -65,7 +65,7 @@
 | Phone          | string | 手机号码                                                     | 18512345678      | Y        |
 | CostCount      | int    | 短信拆分条数                                                 | 2                | Y        |
 | ReceiptTime    | int    | 状态报告时间                                                 | 1563867000       | Y        |
-| ReceiptResult  | string | 发送状态                                                     | 发送成功         | Y        |
+| ReceiptResult  | string | 回执状态结果，可根据该字段判断发送结果，枚举值：<br>> 发送成功 或 Success：代表短消息发送成功<br>> 发送失败 或 Fail：代表短消息发送失败<br>> 状态未知 或 Unknow：代表运营商未上报状态报告 | 发送成功         | Y        |
 | ReceiptCode    | string | 状态报告编码                                                 | Delivrd          | Y        |
 | ReceiptDesc    | string | 状态报告说明                                                 | 用户接收成功     | Y        |
 | UserId         | string | 自定义的业务标识ID，字符串（ 长度不能超过32 位），不支持 单引号、表情包符号等特殊字符 | ucloud-uhost-001 | N        |
