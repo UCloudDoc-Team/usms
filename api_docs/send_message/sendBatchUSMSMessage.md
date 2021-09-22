@@ -1,5 +1,3 @@
-
-
 # 批量发送短信-SendBatchUSMSMessage
 
 > 支持在一次请求中向多个不同的手机号码发送不同内容的短信；在一次批量请求中，最多支持200个号码；更多接口说明，详见 [短信服务API 概览](https://docs.ucloud.cn/usms/api_docs/9001)
