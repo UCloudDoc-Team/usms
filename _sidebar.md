@@ -10,6 +10,7 @@
         * [审核时间及流程](/usms/introduction/2005/2107)
     * [服务协议](/usms/introduction/service_level)
     * [产品动态](/usms/introduction/2009)
+    * [产品公告](/usms/introduction/notice)
 * 产品定价
     * [国内短信价格](/usms/price/3003)
     * [国际及港澳台短信价格](/usms/price/3005)
