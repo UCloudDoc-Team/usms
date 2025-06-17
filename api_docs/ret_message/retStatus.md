@@ -61,14 +61,14 @@
 
 | Parameter name | Type   | Description                                                  | Case             | Required |
 | -------------- | ------ | ------------------------------------------------------------ | ---------------- | -------- |
-| SessionNo      | string | [短信发送](https://docs.ucloud.cn/api/usms-api/send_usms_message) 的发送序列号 | xddd-xx-ss-ss-ss | Y        |
+| SessionNo      | string | [短信发送](https://docs.{{domainName}}/api/usms-api/send_usms_message) 的发送序列号 | xddd-xx-ss-ss-ss | Y        |
 | Phone          | string | 手机号码                                                     | 18512345678      | Y        |
 | CostCount      | int    | 短信拆分条数                                                 | 2                | Y        |
 | ReceiptTime    | int    | 状态报告时间                                                 | 1563867000       | Y        |
 | ReceiptResult  | string | 回执状态结果，可根据该字段判断发送结果，枚举值：<br>> 发送成功 或 Success：代表短消息发送成功<br>> 发送失败 或 Fail：代表短消息发送失败<br>> 状态未知 或 Unknow：代表运营商未上报状态报告 | 发送成功         | Y        |
 | ReceiptCode    | string | 状态报告编码                                                 | Delivrd          | Y        |
 | ReceiptDesc    | string | 状态报告说明                                                 | 用户接收成功     | Y        |
-| UserId         | string | 自定义的业务标识ID，字符串（ 长度不能超过32 位），不支持 单引号、表情包符号等特殊字符 | ucloud-uhost-001 | N        |
+| UserId         | string | 自定义的业务标识ID，字符串（ 长度不能超过32 位），不支持 单引号、表情包符号等特殊字符 | {{channelName}}-uhost-001 | N        |
 
 
 

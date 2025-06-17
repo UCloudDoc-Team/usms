@@ -57,7 +57,7 @@
 | Parameter name | Type   | Description                                      | Case             | Required |
 | -------------- | ------ | ------------------------------------------------ | ---------------- | -------- |
 | ExtendCode     | string | 扩展码，默认不带                                 | 12345            | N        |
-| UserId         | string | 自定义的业务标识ID，字符串（ 长度不能超过32 位） | ucloud-uhost-001 | N        |
+| UserId         | string | 自定义的业务标识ID，字符串（ 长度不能超过32 位） | {{channelName}}-uhost-001 | N        |
 | Phone          | string | 手机号码                                         | 18512345678      | Y        |
 | ReplyContent   | string | 上行（回复）消息                                 | 好的，收到了     | Y        |
 | ReplyTime      | int    | 回复时间                                         | 1563867000       | Y        |

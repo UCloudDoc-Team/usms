@@ -9,8 +9,8 @@
 您可以选择以下方式中的任意一种，发起 API 请求：
 
 - 多语言 OpenSDK / [Python](https://github.com/ucloud/ucloud-sdk-python3) / [Java](https://github.com/ucloud/ucloud-sdk-java) /
-- [UAPI 浏览器](https://console.ucloud.cn/uapi/detail?id=SendUSMSMessage)
-- [CloudShell 云命令行](https://shell.ucloud.cn/)
+- [UAPI 浏览器]({{consoleURL}}/uapi/detail?id=SendUSMSMessage)
+- [CloudShell 云命令行](https://shell.{{domainName}}/)
 
 
 
@@ -21,8 +21,8 @@
 | 参数名        | 类型   | 描述信息                                                     | 必填    |
 | ------------- | ------ | ------------------------------------------------------------ | ------- |
 | **Action**    | string | 对应的 API 指令名称，当前 API 为 `SendUSMSMessage`           | **Yes** |
-| **PublicKey** | string | 用户公钥，可从 [控制台](https://console.ucloud.cn/uapi/apikey) 获取 | **Yes** |
-| **Signature** | string | 根据公钥及 API 指令生成的用户签名，参见 [签名算法](https://docs.ucloud.cn/api/summary/signature) | **Yes** |
+| **PublicKey** | string | 用户公钥，可从 [控制台]({{consoleURL}}/uapi/apikey) 获取 | **Yes** |
+| **Signature** | string | 根据公钥及 API 指令生成的用户签名，参见 [签名算法](https://docs.{{domainName}}/api/summary/signature) | **Yes** |
 
 
 
@@ -30,8 +30,8 @@
 
 | 参数名             | 类型   | 描述信息                                                     | 举例                           | 必填 |
 | ------------------ | ------ | ------------------------------------------------------------ | ------------------------------ | ---- |
-| **ProjectId**      | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) | org-bXXXXry                    | Yes  |
-| **SessionNoSet.N** | string | [短信发送](https://docs.ucloud.cn/api/usms-api/send_usms_message) 返回的SessionNo序列号集合，参数格式 SessionNoSet.0，SessionNoSet.1 .... | xddd-xx-ss-ss-ss               | Yes  |
+| **ProjectId**      | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.{{domainName}}/api/summary/get_project_list) | org-bXXXXry                    | Yes  |
+| **SessionNoSet.N** | string | [短信发送](https://docs.{{domainName}}/api/usms-api/send_usms_message) 返回的SessionNo序列号集合，参数格式 SessionNoSet.0，SessionNoSet.1 .... | xddd-xx-ss-ss-ss               | Yes  |
 | **PhoneNumbers.N** | string | 电话号码数组，电话号码格式为(60)1xxxxxxxx，()中为国际长途区号(如中国为86或0086，两种格式都支持)，后面为电话号码.若不传入国际区号，如1851623xxxx，则默认为国内手机号 | (86)185XXXX9057                | No   |
 | **CustomerStatus** | string | 客户主动上报的短信使用情况                                   | 0代表短信已使用，非0表示未使用 | No   |
 
@@ -51,7 +51,7 @@
 ### 请求示例
 
 ```json
-https://api.ucloud.cn/?Action=upUSMSCustomerStatus
+{{apiURL}}/?Action=upUSMSCustomerStatus
 &ProjectId=org-XXXXqi
 &SessionNoSet.0=497XXXX4-eXXXXc-4XXX
 &PhoneNumber.0=185XXXX9057
