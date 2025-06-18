@@ -8,6 +8,6 @@
 | :-------- | :-------- | :-------- | :-------- |
 | Action | true | String | 对应的 API 名称，如 SendUSMSMessage |
 | PublicKey | true | String | 对应的 API公钥 |
-| Signature | true | String | 根据API公私钥及API指令生成的用户签名，参见 [签名算法](https://docs.{{domainName}}/api/summary/signature) |
-| ProjectId | false | String | 项目 ID，主账号与财务账号为空时为默认项目；子账号为必填字段，参见 [获取 项目ID](https://docs.{{domainName}}/api/summary/get_project_list) |
+| Signature | true | String | 根据API公私钥及API指令生成的用户签名，参见 [签名算法](https://docs.ucloud.cn/api/summary/signature) |
+| ProjectId | false | String | 项目 ID，主账号与财务账号为空时为默认项目；子账号为必填字段，参见 [获取 项目ID](https://docs.ucloud.cn/api/summary/get_project_list) |
 

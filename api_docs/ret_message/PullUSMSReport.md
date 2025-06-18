@@ -6,7 +6,7 @@
 
 # 接口说明
 
-此接口默认不开通，如需开通使用请联系技术支持申请开通；
+此接口默认不开通，如需开通使用请联系 [UCloud技术支持](https://www.ucloud.cn/site/service.html) 申请开通；
 
 此接口服务开通后，我们会将您账号下最新上报的状态报告单独保留72小时，期间您可通过此接口分批拉取状态报告；数据拉取成功后，平台将删除原始数据，请您及时保管及存储拉取的数据！
 
@@ -18,8 +18,8 @@
 | -------------- | ------ | ------------------------------------------------------------ | -------- | -------- |
 | Action         | String | 对应的 API 名称，PullUSMSReport                              | Yes      | 公共参数 |
 | PublicKey      | String | 对应的 API公钥                                               | Yes      | 公共参数 |
-| Signature      | String | 根据API公私钥及API指令生成的用户签名，参见 [签名算法](https://docs.{{domainName}}/api/summary/signature) | Yes      | 公共参数 |
-| ProjectId      | string | 项目 ID，主账号与财务账号为空时为 默认项目；子账号为必填字段，参见 [获取 项目ID](https://docs.{{domainName}}/api/summary/get_project_list) | Yes      | 公共参数 |
+| Signature      | String | 根据API公私钥及API指令生成的用户签名，参见 [签名算法](https://docs.ucloud.cn/api/summary/signature) | Yes      | 公共参数 |
+| ProjectId      | string | 项目 ID，主账号与财务账号为空时为 默认项目；子账号为必填字段，参见 [获取 项目ID](https://docs.ucloud.cn/api/summary/get_project_list) | Yes      | 公共参数 |
 | Limit          | int    | 单次拉取条数，默认100，最大200；                             | Yes      |          |
 
 
@@ -40,7 +40,7 @@
 
 | Parameter name | Type   | Description                                                  |
 | -------------- | ------ | ------------------------------------------------------------ |
-| SessionNo      | string | [短信发送](https://docs.{{domainName}}/api/usms-api/send_usms_message) 的发送序列号 |
+| SessionNo      | string | [短信发送](https://docs.ucloud.cn/api/usms-api/send_usms_message) 的发送序列号 |
 | Phone          | string | 手机号码                                                     |
 | CostCount      | int    | 短信拆分条数                                                 |
 | ReceiptTime    | int    | 状态报告时间                                                 |
@@ -56,7 +56,7 @@
 ## 请求示例
 
 ```http
-{{apiURL}}/?Action=PullUSMSReport
+https://api.ucloud.cn/?Action=PullUSMSReport
 &PublicKey=vsRhB0Qzo***********************i74A=
 &Signature=xxxxxxxxxxxxxxxxxxxxxxxxxxxx
 &ProjectId=org***34

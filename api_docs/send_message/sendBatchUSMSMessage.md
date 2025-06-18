@@ -1,6 +1,6 @@
 # 批量发送短信-SendBatchUSMSMessage
 
-> 支持在一次请求中向多个不同的手机号码发送不同内容的短信；在一次批量请求中，最多支持200个号码；更多接口说明，详见 [短信服务API 概览](https://docs.{{domainName}}/usms/api_docs/9001)
+> 支持在一次请求中向多个不同的手机号码发送不同内容的短信；在一次批量请求中，最多支持200个号码；更多接口说明，详见 [短信服务API 概览](https://docs.ucloud.cn/usms/api_docs/9001)
 
 # Request Parameters
 
@@ -8,8 +8,8 @@
 | -------------- | ------ | ------------------------------------------------------------ | -------- | -------- |
 | Action         | String | 对应的 API 名称，SendBatchUSMSMessage                        | Yes      | 公共参数 |
 | PublicKey      | String | 对应的 API公钥                                               | Yes      | 公共参数 |
-| Signature      | String | 根据API公私钥及API指令生成的用户签名，参见 [签名算法](https://docs.{{domainName}}/api/summary/signature) | Yes      | 公共参数 |
-| ProjectId      | string | 项目 ID，主账号与财务账号为空时为 默认项目；子账号为必填字段，参见 [获取 项目ID](https://docs.{{domainName}}/api/summary/get_project_list) | Yes      | 公共参数 |
+| Signature      | String | 根据API公私钥及API指令生成的用户签名，参见 [签名算法](https://docs.ucloud.cn/api/summary/signature) | Yes      | 公共参数 |
+| ProjectId      | string | 项目 ID，主账号与财务账号为空时为 默认项目；子账号为必填字段，参见 [获取 项目ID](https://docs.ucloud.cn/api/summary/get_project_list) | Yes      | 公共参数 |
 | TaskContent    | string | 批量发送参数，base64编码后的json数组，编码前后的json数组参考下述示例：<br> [Base64编码前的TaskContent示例](usms/api_docs/send_message/sendBatchUSMSMessage?id=taskcontent示例（base64编码前）)、 [Base64编码后的TaskContent示例](usms/api_docs/send_message/sendBatchUSMSMessage?id=taskcontent示例（base64编码后）) | Yes      |          |
 
 
@@ -19,7 +19,7 @@
 | Parameter name | Type   | Description            | Case            | Required |
 | -------------- | ------ | ---------------------- | --------------- | -------- |
 | TemplateId     | string | 短信模板ID             | UTB20092XXXXD02 | Yes      |
-| SigContent     | string | 短信签名               | {{channelName}}          | Yes      |
+| SigContent     | string | 短信签名               | UCloud          | Yes      |
 | Target         | Array  | 号码及短信内容组合列表 |                 | Yes      |
 
 
@@ -28,10 +28,10 @@
 
 | Parameter name | Type   | Description                                                  | Case               | Required |
 | -------------- | ------ | ------------------------------------------------------------ | ------------------ | -------- |
-| TemplateParams | Array  | 短信模板中的变量（数组格式）                                 | ["{{channelName}}","13455"] | Yes      |
+| TemplateParams | Array  | 短信模板中的变量（数组格式）                                 | ["UCloud","13455"] | Yes      |
 | Phone          | string | 手机号码，手机号码格式为(60)1xxxxxxxx，()中为国际长途区号(如中国为86或0086，两种格式都支持)，后面为电话号码.若不传入国际区号，如185XXXX0507，则默认为国内手机号 | 185XXXX0507        | Yes      |
-| UserId         | string | 自定义的业务标识ID，字符串（ 长度不能超过32 位），不支持 单引号、表情包符号等特殊字符 | {{channelName}}-uhost-001   | No       |
-| ExtendCode     | string | 短信扩展码，格式为阿拉伯数字串，默认不开通，如需开通请联系 {{channelName}}技术支持| 123                | No       |
+| UserId         | string | 自定义的业务标识ID，字符串（ 长度不能超过32 位），不支持 单引号、表情包符号等特殊字符 | ucloud-uhost-001   | No       |
+| ExtendCode     | string | 短信扩展码，格式为阿拉伯数字串，默认不开通，如需开通请联系 UCloud技术支持 | 123                | No       |
 
 
 
@@ -41,7 +41,7 @@
 [
     {
         "TemplateId":"UTA20212831C85C",
-        "SigContent":"{{channelName}}",
+        "SigContent":"UCloud",
         "Target":[
             {
                 "TemplateParams":[
@@ -109,7 +109,7 @@ WwogICAgewogICAgICAgICJUZW1wbGF0ZUlkIjoiVVRBMjAyMTI4MzFDODVDIiwKICAgICAgICAiU2ln
 # Request Example
 
 ```http
-{{consoleURL}}/?Action=SendBatchUSMSMessage
+https://api.ucloud.cn/?Action=SendBatchUSMSMessage
 &PublicKey=vsRhB0Qzo9elXXXXXkw8o/vmss8Tb0vxi74A=
 &Signature=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 &ProjectId=org1234
@@ -129,7 +129,7 @@ WwogICAgewogICAgICAgICJUZW1wbGF0ZUlkIjoiVVRBMjAyMTI4MzFDODVDIiwKICAgICAgICAiU2ln
     "FailContent":[
         {
             "TemplateId":"UTA20212831C85C",
-            "SigContent":"{{channelName}}",
+            "SigContent":"UCloud",
             "Target":[
                 {
                     "TemplateParams":[
